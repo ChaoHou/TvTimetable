@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">电视节目表</string>
+    <string name="refresh">Refresh</string>
+    <string name="today">Date</string>
+    <string name="title_activity_tvstation_data_set">station</string>
+    <string name="title_activity_tvchannel_data_set">channel</string>
+    <string name="title_activity_tvprogram_data_set">program</string>
+
+</resources>

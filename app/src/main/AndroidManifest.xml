@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.c.tvtimetable" >
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".area.AreaDataSetActivity"
+            android:label="@string/app_name"
+            android:launchMode="singleTop">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".station.TVstationDataSetActivity"
+            android:label="@string/title_activity_tvstation_data_set"
+            android:launchMode="singleTop"
+            android:parentActivityName=".area.AreaDataSetActivity">
+        </activity>
+        <activity
+            android:name=".channel.TVchannelDataSetActivity"
+            android:label="@string/title_activity_tvchannel_data_set"
+            android:launchMode="singleTop"
+            android:parentActivityName=".station.TVstationDataSetActivity">
+        </activity>
+        <activity
+            android:name=".program.TVprogramDataSetActivity"
+            android:label="@string/title_activity_tvprogram_data_set"
+            android:parentActivityName=".channel.TVchannelDataSetActivity">
+        </activity>
+    </application>
+
+</manifest>
